@@ -20,8 +20,8 @@
 
                 <section class="gh-home-subscribe">
                     {{^if @member}}
-                        <h2 class="gh-home-subscribe-title">Stay tuned</h2>
-                        <p class="gh-home-subscribe-description">Don’t miss out on the latest issues. Sign up now to get access to the library of members-only issues.</p>
+                        <h2 class="gh-home-subscribe-title">Zum Newsletter anmelden!</h2>
+                        <p class="gh-home-subscribe-description">Bekomme jeden neuen Artikel, direkt in dein Postfach! Außerdem zeigst du mir damit, dass du gut findest - was hier geschrieben wird.</p>
 
                         <a class="gh-home-subscribe-input" href="#/portal/signup" data-portal="signup">
                             jamie@example.com
@@ -51,7 +51,7 @@
                             <header class="gh-article-header">
                                 <h2 class="gh-article-title">{{title}}</h2>
                                 <span class="gh-article-meta">
-                                    By {{primary_author.name}} —
+                                    {{!-- By {{primary_author.name}} — --}}
                                     <time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
                                 </span>
                             </header>
@@ -80,14 +80,14 @@
                         </article>
 
                         <footer class="gh-home-latest-footer">
-                            <a class="gh-btn" href="{{url}}">Read latest issue</a>
+                            <a class="gh-btn" href="{{url}}">Neusten Artikel lesen.</a>
                         </footer>
                     {{/foreach}}
                 </section>
 
                 <div class="gh-home-latest-label">
                     <span class="gh-home-latest-indicator"></span>
-                    Latest issue
+                    NEU
                 </div>
             </div>
         </div>
